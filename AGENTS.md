@@ -6,11 +6,11 @@ Recreate Blobby as a browser-playable isometric colour/path puzzle using Phaser 
 The original is a compiled Unity reference at `Blobby_Data/`, with its recording at `gameplay.mp4`.
 Keep deterministic puzzle rules independent from rendering, input, animations, audio and persistence.
 Use SPEC.md for evidence/rules and PLAN.md for ordered milestones and verification gates.
-Current authorization: Phase 2 **M1 only**, approved 2026-11-13. M1 is complete. Wait for the user before M2; do not build rendering/input yet.
+Current authorization: Phase 2 **M2 only**, approved 2026-11-13 after M1 acceptance. Build and verify the level-1 greybox, then stop and wait for the user before M3.
 
 ## Phase boundary and evidence
 
-- M1 may establish tooling, pure logic, tests, a level-1 logic fixture and solver. Do not implement M2 rendering, gameplay input or later milestones until instructed. No touch/mobile or camera rotation is required for M1–M2. Investigate camera needs at rotation-dependent levels; defer rotating/moving platforms and teleporters to M3 without guessed rules.
+- M1 established tooling, pure logic, tests, a level-1 logic fixture and solver. M2 authorizes level-1 rendering, keyboard input, placeholder animation and browser verification only. Do not implement later milestones until instructed. No touch/mobile or camera rotation is required for M1–M2. Investigate camera needs at rotation-dependent levels; defer rotating/moving platforms and teleporters to M3 without guessed rules.
 - The expected `reference/gameplay.mp4` and `reference/data/` were absent. Actual inputs are the root recording and `Blobby_Data/`; do not move or modify them to match a presumed layout.
 - Do not run `Blobby.exe`, any bundled executable, or load/execute the game's assemblies. Inspect original files as read-only data. Do not launch the game through Wine, Mono, Unity, a debugger, or another wrapper.
 - Phase 1 loaded router, game-docs, puzzle and phaser-core. Route new concerns with `.agents/skills/router/SKILL.md`; load only matching skills as needed. PLAN.md lists future skill use; it does not mean those skills have been read.
@@ -20,7 +20,7 @@ Current authorization: Phase 2 **M1 only**, approved 2026-11-13. M1 is complete.
 
 ## Commands
 
-M1 tooling exists and uses Node 26 (the installed environment), npm, strict TypeScript, Vite and Vitest. The core is runnable through tests/solver; the served page is an M1 status page, not a playable game. Install/typecheck/test/validate/solve/build/dev commands below have been verified; `npm ci` and preview are available but were not separately run in M1.
+Tooling uses Node 26 (the installed environment), npm, strict TypeScript, Vite, Vitest and Playwright. The core runs through tests/solver; M2 now serves a playable level-1 greybox. Install/typecheck/test/validate/solve/build/dev and M2 browser checks have been verified; `npm ci` and preview remain available but were not separately run. PLAN.md records actual results and scope.
 
 | Task | Command |
 |---|---|
@@ -31,7 +31,7 @@ M1 tooling exists and uses Node 26 (the installed environment), npm, strict Type
 | Unit/rule tests | `npm test -- --run` |
 | Validate level JSON/manifests | `npm run validate:levels` |
 | Solve/replay current manifest (M1: puzzle 1 only) | `npm run solve:levels` |
-| Browser checks | Deferred; introduce `test:e2e` with browser gameplay, not present in M1 |
+| Browser checks (M2) | `npm run test:e2e` (Playwright Chromium; install browser with `npm exec playwright install chromium`) |
 | Production build | `npm run build` |
 | Inspect production locally | `npm run preview -- --host 127.0.0.1` |
 
@@ -66,4 +66,4 @@ For an implementation task, all of the following must be true:
 5. PLAN.md status and relevant docs reflect what exists. SPEC.md changes have been communicated. No unrelated files or original reference data were changed.
 6. Report what changed, the checks actually run, and any unresolved limitations. Do not claim complete reference fidelity where the recording provides no coverage.
 
-Stop after M1, report commands/results and new assumptions, and wait for the user before M2. Keep switch edge cases ASSUMED in SPEC's Needs verification section and isolated behind one tested rule function. Support disappearance defaults to a fallen soft-fail recoverable by unlimited undo/restart; no visible move counter.
+Stop after M2, report commands/results and new assumptions, and wait for the user before M3. Keep switch edge cases ASSUMED in SPEC's Needs verification section and isolated behind one tested rule function. Support disappearance defaults to a fallen soft-fail recoverable by unlimited undo/restart; no visible move counter outside the requested F1 debug overlay.

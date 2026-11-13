@@ -1,0 +1,129 @@
+{
+  "recoveryCycles": 60,
+  "sceneRestarts": 8,
+  "baseline": {
+    "state": {
+      "levelId": "puzzle-01",
+      "position": {
+        "x": 0,
+        "z": 0,
+        "height": 0
+      },
+      "heading": 0,
+      "switches": {
+        "effective": "blue",
+        "pending": null,
+        "mixed": false,
+        "unaryPressed": "blue",
+        "dualPressed": [],
+        "dualActivated": []
+      },
+      "status": "playing",
+      "actions": 0,
+      "steps": 0
+    },
+    "hash": "[\"puzzle-01\",0,0,0,0,\"blue\",null,false,\"blue\",[],[],\"playing\",0,0]",
+    "historyDepth": 0,
+    "animating": false,
+    "animationElapsed": null,
+    "queued": null,
+    "paused": false,
+    "debugVisible": false,
+    "completions": 0,
+    "children": 9,
+    "blurListeners": 2,
+    "hiddenListeners": 2,
+    "actor": {
+      "x": 690,
+      "y": 390,
+      "alpha": 1,
+      "scale": 1
+    }
+  },
+  "after": {
+    "state": {
+      "levelId": "puzzle-01",
+      "position": {
+        "x": 0,
+        "z": 0,
+        "height": 0
+      },
+      "heading": 0,
+      "switches": {
+        "effective": "blue",
+        "pending": null,
+        "mixed": false,
+        "unaryPressed": "blue",
+        "dualPressed": [],
+        "dualActivated": []
+      },
+      "status": "playing",
+      "actions": 0,
+      "steps": 0
+    },
+    "hash": "[\"puzzle-01\",0,0,0,0,\"blue\",null,false,\"blue\",[],[],\"playing\",0,0]",
+    "historyDepth": 0,
+    "animating": false,
+    "animationElapsed": null,
+    "queued": null,
+    "paused": false,
+    "debugVisible": false,
+    "completions": 3,
+    "children": 9,
+    "blurListeners": 2,
+    "hiddenListeners": 2,
+    "actor": {
+      "x": 690,
+      "y": 390,
+      "alpha": 1,
+      "scale": 1
+    }
+  },
+  "recreated": {
+    "state": {
+      "levelId": "puzzle-01",
+      "position": {
+        "x": 0,
+        "z": 0,
+        "height": 0
+      },
+      "heading": 0,
+      "switches": {
+        "effective": "blue",
+        "pending": null,
+        "mixed": false,
+        "unaryPressed": "blue",
+        "dualPressed": [],
+        "dualActivated": []
+      },
+      "status": "playing",
+      "actions": 0,
+      "steps": 0
+    },
+    "hash": "[\"puzzle-01\",0,0,0,0,\"blue\",null,false,\"blue\",[],[],\"playing\",0,0]",
+    "historyDepth": 0,
+    "animating": false,
+    "animationElapsed": null,
+    "queued": null,
+    "paused": false,
+    "debugVisible": false,
+    "completions": 0,
+    "children": 9,
+    "blurListeners": 2,
+    "hiddenListeners": 2,
+    "actor": {
+      "x": 690,
+      "y": 390,
+      "alpha": 1,
+      "scale": 1
+    }
+  },
+  "baselineListeners": {
+    "keydown": 1,
+    "keyup": 1
+  },
+  "recreatedListeners": {
+    "keydown": 1,
+    "keyup": 1
+  }
+}
