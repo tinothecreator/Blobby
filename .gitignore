@@ -1,0 +1,19 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+__pycache__/
+
+
+# Reference material (large, regenerable, not shipped)
+reference/frames/
+Blobby_Data/
+Blobby.exe
+gameplay.mp4
+*.mp4
+
+# Other original game files, if present
+*.dll
+MonoBleedingEdge/
+UnityCrashHandler*
+UnityPlayer*

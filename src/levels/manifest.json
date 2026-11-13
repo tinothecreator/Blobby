@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 1,
+  "coverage": "M1: source puzzle 1 only; remaining 36 puzzles and finale/credits deferred",
+  "levels": ["puzzle-01.json"]
+}

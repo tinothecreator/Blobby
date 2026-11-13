@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "id": "puzzle-01",
+  "order": 1,
+  "chapter": 1,
+  "title": "First Footing",
+  "chapterTitle": "Open Skies",
+  "source": {
+    "buildIndex": 1,
+    "file": "Blobby_Data/level1",
+    "notes": [
+      "OBSERVED: tools/inspect_level1.py reads the source scene without execution. Entity IDs preserve source GameObject path IDs; portal 349 and button 762 provide their nested neutral supports.",
+      "OBSERVED: /Level, /Level/Tilemap and /Level/Tilemap/level1 have identity transforms.",
+      "Coordinate conversion: x = source X - 0.5; z = source Z - 0.5; height 0 is the walk plane. Decorative actor Y offset 0.164883 and tile bevel scales do not affect support. Heading 0 is world +Z.",
+      "ASSUMED: blue initial selection and pressed spawn switch match early video HUD. This is specified initialization, not a free input move.",
+      "Only source layout/order reused by permission. Titles are original replacement text."
+    ]
+  },
+  "spawn": {
+    "x": 0,
+    "z": 0,
+    "height": 0,
+    "heading": 0
+  },
+  "initialSwitches": {
+    "effective": "blue",
+    "pending": null,
+    "mixed": false,
+    "unaryPressed": "blue",
+    "dualPressed": [],
+    "dualActivated": []
+  },
+  "tiles": [
+    {
+      "id": "support-8",
+      "x": 3,
+      "z": 1,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-9",
+      "x": 3,
+      "z": 0,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-10",
+      "x": 0,
+      "z": 1,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-11",
+      "x": -2,
+      "z": 0,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-12",
+      "x": -2,
+      "z": -3,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-13",
+      "x": 0,
+      "z": -2,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-14",
+      "x": 2,
+      "z": 3,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-15",
+      "x": 3,
+      "z": 2,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-16",
+      "x": -2,
+      "z": -2,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-17",
+      "x": 2,
+      "z": 0,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-18",
+      "x": 1,
+      "z": -2,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-19",
+      "x": 0,
+      "z": -3,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-20",
+      "x": 1,
+      "z": 3,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-21",
+      "x": 1,
+      "z": 2,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-22",
+      "x": 3,
+      "z": 3,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-23",
+      "x": -1,
+      "z": -3,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-24",
+      "x": 2,
+      "z": -2,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-25",
+      "x": 2,
+      "z": -1,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-26",
+      "x": -2,
+      "z": -1,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-27",
+      "x": 0,
+      "z": 2,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-28",
+      "x": -2,
+      "z": 1,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-349",
+      "x": -2,
+      "z": 2,
+      "height": 0,
+      "colour": null
+    },
+    {
+      "id": "support-762",
+      "x": 0,
+      "z": 0,
+      "height": 0,
+      "colour": null
+    }
+  ],
+  "walls": [],
+  "switches": [
+    {
+      "id": "switch-762",
+      "x": 0,
+      "z": 0,
+      "height": 0,
+      "kind": "unary",
+      "colour": "blue"
+    }
+  ],
+  "exits": [
+    {
+      "x": -2,
+      "z": 2,
+      "height": 0
+    }
+  ]
+}
